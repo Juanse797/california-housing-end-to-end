@@ -6,13 +6,13 @@ import urllib.request
 
 import pandas as pd
  
-from housing.config import HOUSING_DIR
+from housing.config import DATA_DIR, HOUSING_CSV
 
 
 HOUSING_URL = "https://github.com/ageron/data/raw/main/housing.tgz"
 
 
-def load_housing_data(data_dir: Path | str = HOUSING_DIR) -> pd.DataFrame:
+def load_housing_data(data_dir: Path | str = DATA_DIR) -> pd.DataFrame:
     """
     Descarga (si no existe) y carga el dataset Housing como DataFrame.
     Guarda:
@@ -36,7 +36,7 @@ def load_housing_data(data_dir: Path | str = HOUSING_DIR) -> pd.DataFrame:
         with tarfile.open(tarball_path) as tar:
             tar.extractall(path=data_dir, filter="data")
 
-    return pd.read_csv(csv_path)
+    return pd.read_csv(HOUSING_CSV)
 
 if __name__ == "__main__":
     load_housing_data()

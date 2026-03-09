@@ -6,5 +6,9 @@ PROJECT_ROOT = Path(__file__).resolve().parents[2]
 # Carpeta data del proyecto
 DATA_DIR = PROJECT_ROOT / "data"
 
-# Donde guardas el housing
-HOUSING_DIR = DATA_DIR / "housing"
+# Aquí definimos la "identidad" del dataset
+HOUSING_PATH = DATA_DIR / "housing_raw"
+HOUSING_CSV = HOUSING_PATH / "housing.csv"
+
+# Aqui definimos la ruta del split
+SPLIT_DIR = DATA_DIR / "interim"
