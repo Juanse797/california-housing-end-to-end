@@ -12,3 +12,6 @@ HOUSING_CSV = HOUSING_PATH / "housing.csv"
 
 # Aqui definimos la ruta del split
 SPLIT_DIR = DATA_DIR / "interim"
+
+# Aqui definimos la ruta del csv preprocesado
+PREPROCESSED_DIR = DATA_DIR / "processed"
