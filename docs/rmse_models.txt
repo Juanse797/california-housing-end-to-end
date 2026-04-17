@@ -1,0 +1,5 @@
+Linear Regression: 70003 CV mean RMSE
+Decision Tree: 66573.734600 CV mean RMSE
+Random Forest: 47038.092799 CV mean RMSE
+Random Forest tuneado: 43590 validation RMSE
+Modelo final en test: 41448.084299370465 test RMSE
